@@ -1,0 +1,21 @@
+SQL - Structured Query Language - Relation DB
+
+SELECT * FROM table_name # SELECT column FROM table_name, * - all column
+SELECT west AS "West Region" FROM tutorial.us_housing_units # AS renames column as you want
+LIMIT 100 # Limits rows for 100 lines, if you don't need the whole table by several reasons
+SELECT column_name FROM table_name WHERE west > 10 # Obvious
+LIKE # Sensetive to Capital and lower-case letters
+ILIKE # Unsensetive
+'%word%' in link LIKE # Searches the similiar word in the middle of expression
+
+
+Note: the clauses always need to be in this order: SELECT, FROM, WHERE.
+Note: If you're using an operator with values that are non-numeric, you need to put the value in single quotes: 'value'
+    LIKE allows you to match similar values, instead of exact values.
+    IN allows you to specify a list of values you'd like to include.
+    BETWEEN allows you to select only rows within a certain range.
+    IS NULL allows you to select rows that contain no data in a given column.
+    AND allows you to select only rows that satisfy two conditions.
+    OR allows you to select rows that satisfy either of two conditions.
+    NOT allows you to select rows that do not match a certain condition.
+

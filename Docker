@@ -1,0 +1,11 @@
+CMD: 
+docker ps -a // Вывод всех контейнеров
+docker rm(i) // Удаление контейнеров(образов)
+docker run busybox(Var) // Запуск контейнера
+
+docker run busybox
+docker ps 
+docker ps -a
+docker rm -f id cont.
+docker rm -f $(docker ps -a -q)
+

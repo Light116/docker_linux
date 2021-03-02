@@ -1,0 +1,57 @@
+Terminal:
+
+cd - # Возврат на директорию ниже
+ll , ls -l # Вывод данных на ветке
+command_1; command_2; command_3 # Выполнение команд одна за другой
+command_1 && command_2 # Выполняется команда 2, при условии Successful 1
+killall chrome ; kill - INT # Удаление процесса по имени; по номеру процессу
+CTRL + R # Reverse Search
+CTRL + A; CTRL + E # Going to the Start; End of the line
+tail -f <dir_log.file> # Analize log - file
+tail -f <dir_log.file> | grep <regul. expression> # For showing only important lines
+journalctl -f # System's log files in real time
+!!! Comprehence with less, cat, grep !!!
+!$ # Is used in case of arg. for the previous command
+!! # Is used in case of taking the whole previous command
+alias gerp=grep # will be used if you type incorrect some commands - Alternative: https://github.com/nvbn/thefuck
+poweroff; reboot # Obviously commands
+>name # For erasing content without deleting file
+pstree # Gets tree of your catalogue
+xdg-open _name # Opens file with a program, which is chosen by default
+systemctl status NAME # Show status of the service
+cal # Show calendar
+man ascii # Print ASCII-Table
+(cd ProjectDocker/ && nano readme.txt) # If you need to do some changes in another dir without changing itne
+file $file_name # In case needing to know what file containsр
+time command # For getting information about time in which command will be done
+mkdir 
+
+Lifehacks: If you want to avoid saving your command in history, you should type space before main command 
+python3 -m http.server # In case of turning on HTTP-server
+CTRL X+E # Shortcut for getting NANO text editor where you can type long command, after what it will run 
+CTRL+U and CTRL+Y # If you interrupted by typing another command, can save in buffer to paste it after the second action is done
+
+Used Flags: 
+-k # Kills proccess 
+-v # Shows using proccesses
+-V # Withdraw Version 
+-h # Help
+-a # All
+
+Manual Touchpad:
+https://mnorin.com/nastrojka-tachpada-v-linux.html
+
+Docker: 
+docker run busybox
+docker ps 
+docker ps -a
+docker rm -f id cont.
+docker rm -f $(docker ps -a -q)
+
+
+
+
+
+
+
+
